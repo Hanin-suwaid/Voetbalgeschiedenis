@@ -1,0 +1,26 @@
+footer{
+    background: rgb(24,43,129);
+background: linear-gradient(90deg, rgba(24,43,129,1) 38%, rgba(39,57,138,1) 57%);
+color: white;
+width: 100vw;
+h1{
+    text-align: center;
+}
+div{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ flex-wrap: wrap;
+  
+        i{
+            color: white;
+            font-size: 2rem;
+           padding: 2vh;
+        }
+    }
+
+ p{
+    text-align: center;
+}
+   }
+ 

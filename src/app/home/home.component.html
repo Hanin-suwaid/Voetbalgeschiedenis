@@ -1,31 +1,19 @@
  
  <h1>World Cup 1930-2014</h1>
+
+
+ 
  <div id="cards">
-   
-    <div class="card"><a href=""></a><img src="../../assets/images/dutchland.png" alt="">
-    <div id="wkgegevens">
-        <li *ngFor="let winner of Land">  <p>{{Land.Country[1]}}</p>
-        <p>{{Land.year[1]}}</p></li>
-</div>
-</div>
+    <div *ngFor="let winner of Land">
+
     <div class="card"><a href=""></a><img src="../../assets/images/dutchland.png" alt="">
     <div id="wkgegevens">
     <p>2014 | Brasil</p>
-    <p>Winner: Nederland</p>
-</div>
-</div>
-    <div class="card"><a href=""></a><img src="../../assets/images/dutchland.png" alt="">
-    <div id="wkgegevens">
-    <p>2014 | Brasil</p>
-    <p>Winner: Nederland</p>
-</div>
-</div>
-    <div class="card"><a href=""></a><img src="../../assets/images/dutchland.png" alt="">
-    <div id="wkgegevens">
-    <p>2014 | Brasil</p>
-    <p>Winner: Nederland</p>
+    <p>Winner: {{winner.Winner}}</p>
 </div>
 </div>
 
    
+</div>
+
 </div>

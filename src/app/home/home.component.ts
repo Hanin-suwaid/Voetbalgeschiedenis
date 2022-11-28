@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
-import { WinnersService } from "../winners.service";
+import { Component,OnInit } from '@angular/core';
+import { WinnersService } from '../winners.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
-  winners:any;
-  constructor(private data:WinnersService){}
-  ngOnInit(): void{
-    this.data.getWinners().subscribe(data => this.winners = data)
+export class HomeComponent implements OnInit {
+  Land:any;
+  constructor(private winners: WinnersService) { }
+  ngOnInit(): void {
+    this.winners.getWinners().subscribe(winners => this.Land = winners);
   }
+
 
 }

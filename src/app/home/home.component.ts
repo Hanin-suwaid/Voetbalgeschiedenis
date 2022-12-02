@@ -6,10 +6,10 @@ import { WinnersService } from '../winners.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  Land:any;
+  year:any;
   constructor(private winners: WinnersService) { }
   ngOnInit(): void {
-    this.winners.getWinners().subscribe(winners => this.Land = winners);
+    this.winners.getWinners().subscribe(winners => this.year = winners);
   }
 
 

@@ -5,14 +5,16 @@
  
  <div id="cards">
 
-    <div *ngFor="let winner of Land">
-        <a routerLink="../tournament-info/{{winner.year}}">{{winner.City}}
+    <div *ngFor="let winner of year">
+        <a routerLink="tournament/{{winner.year}}">
     <div class="card"><img src="../../assets/images/dutchland.png" alt="">
     <div id="wkgegevens">
-    <p>2014 | Brasil</p>
+    <p>{{winner.year}} | {{winner.Country}}</p>
     <p>Winner: {{winner.Winner}}</p>
+    
 </div>
 </div>
+
 
   </a> 
 </div>

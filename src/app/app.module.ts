@@ -7,7 +7,9 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { TournamentInfoComponent } from './tournament-info/tournament-info.component';
+import { TournamentComponent } from './tournament/tournament.component';
+
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { TournamentInfoComponent } from './tournament-info/tournament-info.compo
     NavigationComponent,
     HomeComponent,
     FooterComponent,
-    TournamentInfoComponent
+    TournamentComponent
+  
   ],
   imports: [
     BrowserModule,

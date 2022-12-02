@@ -7,13 +7,15 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TournamentInfoComponent } from './tournament-info/tournament-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    TournamentInfoComponent
   ],
   imports: [
     BrowserModule,

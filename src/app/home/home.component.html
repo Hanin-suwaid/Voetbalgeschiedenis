@@ -4,16 +4,16 @@
 
  
  <div id="cards">
-    <div *ngFor="let winner of Land">
 
-    <div class="card"><a href=""></a><img src="../../assets/images/dutchland.png" alt="">
+    <div *ngFor="let winner of Land">
+        <a routerLink="../tournament-info/{{winner.year}}">{{winner.City}}
+    <div class="card"><img src="../../assets/images/dutchland.png" alt="">
     <div id="wkgegevens">
     <p>2014 | Brasil</p>
     <p>Winner: {{winner.Winner}}</p>
 </div>
 </div>
 
-   
+  </a> 
 </div>
-
 </div>

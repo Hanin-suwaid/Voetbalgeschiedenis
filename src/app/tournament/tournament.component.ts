@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { WinnersService } from '../winners.service';
 
 @Component({
@@ -7,12 +8,15 @@ import { WinnersService } from '../winners.service';
   styleUrls: ['./tournament.component.scss']
 })
 export class TournamentComponent implements OnInit {
-year:any;
-  constructor(private data: WinnersService) { }
+year:any
+Home_Team_Name:any;
+
+  constructor(private data:WinnersService, private route:ActivatedRoute) { 
+    this.route.params.subscribe(params => this.year = params['year']);
+  }
 
   ngOnInit(): void {
-    this.data.getTournament().subscribe(year => this.year = year)
-    
+    this.data.getTournament(this.year).subscribe(data => this.Home_Team_Name = data);
   }
 
 }

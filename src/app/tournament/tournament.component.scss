@@ -1,26 +1,33 @@
-
-
-.AllTeams{
-    padding: 4rem 0px 4rem 0px;
+ div{
     display: flex;
-    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
     align-items: center;
-    .custom{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    div{
-        width: 70%;
-        padding: 20px;
-        display: flex;
-        flex-direction: row;
-        margin: 20px 0px 0px 0px;
-        border-bottom: 1px solid black;
-
-
-        img{
-            margin: 0px 20px 0px 20px;
+    
+    table {
+        width: 70vw;
+        text-align: center;
+            .custom{
+            background-color: #283B8A;
+            color: white;
+            display: flex;
+            td{
+                flex: 1;
+                border: 1px solid white;
+            }
+            }
+            .table-row{
+                display: flex;
+                padding-bottom: 30px;
+        td{
+            flex: 1;
+            border: 1px solid white;
+            display: flex;
+            padding: 20px;
+                img{
+                    padding-right: 10px;
+                    }
+                }
+            }
         }
-    }
-}
+ }

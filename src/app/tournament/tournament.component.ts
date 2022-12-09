@@ -12,10 +12,13 @@ year:any;
 
   constructor(private data:WinnersService, private route:ActivatedRoute) { 
     this.route.params.subscribe(params => this.year = params['year']);
+  
   }
 
   ngOnInit(): void {
     this.data.getTournament(this.year).subscribe(data => this.year = data);
+    // this.winners.getWinners().subscribe(winners => this.year = winners);
+ 
   }
 
 }

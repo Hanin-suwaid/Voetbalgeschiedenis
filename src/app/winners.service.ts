@@ -16,4 +16,5 @@ export class WinnersService {
   getTournament(year:any){
     return this.http.get('https://k0497.azurewebsites.net/api/matches/getallmatchesbyyear?type=json&year='+year)
   }
+
 }

@@ -8,15 +8,14 @@ import { WinnersService } from '../winners.service';
   styleUrls: ['./tournament.component.scss']
 })
 export class TournamentComponent implements OnInit {
-year:any
-Home_Team_Name:any;
+year:any;
 
   constructor(private data:WinnersService, private route:ActivatedRoute) { 
     this.route.params.subscribe(params => this.year = params['year']);
   }
 
   ngOnInit(): void {
-    this.data.getTournament(this.year).subscribe(data => this.Home_Team_Name = data);
+    this.data.getTournament(this.year).subscribe(data => this.year = data);
   }
 
 }

@@ -5,10 +5,10 @@
             <td>Score</td>
             <td>Away team</td>
         </tr>    
-            <tr class="table-row">
-                <td><img src="../../assets/images/dutchland.png" width='30vw' alt=""><p *ngIf="year">{{year.Home_Team_Goals}} </p></td>
-                <td><p>3-1</p></td>
-                <td><img src="../../assets/images/dutchland.png" width='30vw' alt=""><p>France: </p></td>
+            <tr class="table-row"  *ngFor="let years of year">
+                    <td><img src="../../assets/images/dutchland.png" width='30vw' alt=""><p>{{years.Home_Team_Name}}</p></td>
+                    <td><p>{{years.Home_Team_Goals}}-{{years.Away_Team_Goals}}</p></td>
+                    <td><img src="../../assets/images/dutchland.png" width='30vw' alt=""><p>{{years.Away_Team_Name}}</p></td>
             </tr>
 
             

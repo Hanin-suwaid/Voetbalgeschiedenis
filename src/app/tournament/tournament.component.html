@@ -1,4 +1,4 @@
-    <h1 *ngIf="year">On this page you can find all matches of {{year.City}} </h1>
+    <h1 *ngIf="year">On this page you can find all matches of {{year[1].year}} </h1>
     <div>
 
         <table class="AllTeams">
@@ -7,17 +7,17 @@
             <td>Score</td>
             <td>Away team</td>
         </tr>    
+        
             <tr class="table-row"  *ngFor="let years of year">
-                    <td class="grootscherm"><img src="../../assets/images/dutchland.png" width='30vw' alt=""><p>{{years.Home_Team_Name}}</p></td>
-                    <td class="kleinscherm"><img src="../../assets/images/dutchland.png" width='30vw' alt=""><p>{{years.Home_Team_Initials}}</p></td>
-                    <td class="kleinscherm" > <p class="goals">{{years.Home_Team_Goals}}-{{years.Away_Team_Goals}}</p></td>
-                    <td class="grootscherm" > <p class="goals">{{years.Home_Team_Goals}}-{{years.Away_Team_Goals}}</p></td>
+                <a routerLink="team/{{years.matchid}}"> 
+                    <td  class="grootscherm"><img src="../../assets/images/dutchland.png" width='30vw' alt=""><p>{{years.Home_Team_Name}}</p></td>
+                    <td class="kleinscherm"><img src="../../assets/images/dutchland.png" width='30vw' alt=""><p>{{years.Home_Team_Initials}}</p></td> 
+                     <td class="kleinscherm"> <p class="goals">{{years.Home_Team_Goals}}-{{years.Away_Team_Goals}}</p></td>
+                    <td class="grootscherm"> <p class="goals">{{years.Home_Team_Goals}}-{{years.Away_Team_Goals}}</p></td> 
                     <td class="grootscherm"><img src="../../assets/images/dutchland.png" width='30vw' alt=""><p>{{years.Away_Team_Name}}</p></td>
                     <td class="kleinscherm"><img src="../../assets/images/dutchland.png" width='30vw' alt=""><p>{{years.Away_Team_Initials}}</p></td>
-            </tr>
+                </a>
+                </tr>
 
-            
-         
         </table>
 </div>
- 

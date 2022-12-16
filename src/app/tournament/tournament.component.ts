@@ -17,8 +17,7 @@ year:any;
 
   ngOnInit(): void {
     this.data.getTournament(this.year).subscribe(data => this.year = data);
-    // this.winners.getWinners().subscribe(winners => this.year = winners);
- 
+  
   }
 
 }

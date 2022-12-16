@@ -17,4 +17,7 @@ export class WinnersService {
     return this.http.get('https://k0497.azurewebsites.net/api/matches/getallmatchesbyyear?type=json&year='+year)
   }
 
+  getAllPlayersbyMatch(matchid:any){
+    return this.http.get('https://k0497.azurewebsites.net/api/players/getallplayers?type=json'+matchid)
+  }
 }

@@ -4,6 +4,7 @@ import { NavigationComponent } from "./navigation/navigation.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HomeComponent } from "./home/home.component";
 import { TournamentComponent } from "./tournament/tournament.component";
+import { TeamComponent } from './team/team.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,10 @@ component: NavigationComponent
 {
   path: 'tournament/:year',
   component: TournamentComponent
+},
+{
+path: 'team/:matchid',
+component: TeamComponent
 }
 
 ];

@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TournamentComponent } from './tournament/tournament.component';
+import { TeamComponent } from './team/team.component';
 
 
 
@@ -17,7 +18,8 @@ import { TournamentComponent } from './tournament/tournament.component';
     NavigationComponent,
     HomeComponent,
     FooterComponent,
-    TournamentComponent
+    TournamentComponent,
+    TeamComponent
   
   ],
   imports: [

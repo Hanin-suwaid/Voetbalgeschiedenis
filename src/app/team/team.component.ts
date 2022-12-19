@@ -14,6 +14,8 @@ matchid:any;
 
   ngOnInit(): void {
     this.data.getAllPlayersbyMatch(this.matchid).subscribe(data => this.matchid = data);
+   
+
   }
 
 }

@@ -9,7 +9,7 @@
         </tr>    
         
             <tr class="table-row"  *ngFor="let years of year">
-                <a routerLink="team/{{years.matchid}}"> 
+                <a routerLink="../../team/{{years.matchid}}"> 
                     <td  class="grootscherm"><img src="../../assets/images/dutchland.png" width='30vw' alt=""><p>{{years.Home_Team_Name}}</p></td>
                     <td class="kleinscherm"><img src="../../assets/images/dutchland.png" width='30vw' alt=""><p>{{years.Home_Team_Initials}}</p></td> 
                      <td class="kleinscherm"> <p class="goals">{{years.Home_Team_Goals}}-{{years.Away_Team_Goals}}</p></td>

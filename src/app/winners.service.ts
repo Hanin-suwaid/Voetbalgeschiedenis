@@ -18,6 +18,6 @@ export class WinnersService {
   }
 
   getAllPlayersbyMatch(matchid:any){
-    return this.http.get('https://k0497.azurewebsites.net/api/players/getallplayers?type=json'+matchid)
+    return this.http.get('https://k0497.azurewebsites.net/api/players/getallplayersbymatch?type=json&matchid='+matchid)
   }
 }

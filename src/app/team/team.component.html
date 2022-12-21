@@ -1,3 +1,22 @@
-<h1 *ngFor='let matchids of matchid'> {{matchids.name}} {{matchids.number}}</h1>
+<h1>On this page you can find all matches of the match</h1>
 
+
+
+
+<div>
+    <table class="AllTeams">
+    <tr class="custom">
+        <td>Player</td>
+        <td>Player number</td>
+    </tr>    
+    
+        <tr class="table-row"  *ngFor="let matchids of matchid">
+                <td  class="grootscherm"><p>{{matchids.name}}</p></td>
+                <td  class="kleinscherm"><p>{{matchids.name}}</p></td>
+                <td class="grootscherm"> <p class="goals">{{matchids.number}}</p></td> 
+                <td class="kleinscherm"> <p class="goals">{{matchids.number}}</p></td> 
+
+            </tr>
+    </table>
+</div>
 

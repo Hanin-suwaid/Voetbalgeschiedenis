@@ -1,6 +1,6 @@
  h1{
     text-align: center;
-    padding: 3vh;
+    padding: 10vh;
  }
  div{
     display: flex;
@@ -26,19 +26,20 @@
                 display: flex;
                 list-style: none;
                 text-decoration: none;
-                padding-bottom: 30px;
+                padding-bottom: 10px;
                   .kleinscherm{
                 display: none;
                   }
             }
             .grootscherm{
                 display: block;
+               
             }
         td{
             flex: 1;
             border: 1px solid white;
             display: flex;
-            padding: 20px;
+            padding: 15px;
             font-size: 1.3rem;
             
             p{
@@ -72,14 +73,15 @@
                 }
                 }
                 .table-row{
+                    a{
                     display: flex;
-                    padding-bottom: 30px;
                       .kleinscherm{
                     display: block;
                 }
                 .grootscherm{
                     display: none;
                 }
+            }
             td{
                 flex: 1;
                 border: 1px solid white;
@@ -87,7 +89,8 @@
                 padding: 20px;
                 p{
                     text-align: center;
-                    font-size:2rem;
+                    font-size:1rem;
+                    display: contents;
                 }
                   
                     }
